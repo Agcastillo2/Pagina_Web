@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Investigaciones.sa.com</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://thumbs.dreamstime.com/b/código-de-programa-css-en-fondo-negro-cierre-pantalla-ordenador-concepto-programador-independiente-o-ti-software-desarrollar-189667310.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Investigaciones.sa</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">Informacion</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Equipo</a>
+      <a href="#invest" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Investigadores</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> Proyectos</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> Precio</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> Contacto</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Informacion</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Equipo</a>
+  <a href="#invest" onclick="w3_close()" class="w3-bar-item w3-button">Investigadores</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Proyectos</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">Precio</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Somos los mejores del mercado</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Te arriesgas?</span><br>
+    <span class="w3-large">Empieza tu proyecto con nosotros.</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Quieres saber mas...</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">Sobre la empresa</h3>
+  <p class="w3-center w3-large">No nos juzgues por nuestros exitos sino por nuestros fracasos, por que no tenemos. </p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsables</p>
+      <p>Establecemos la magnitud de las dificultades y de cómo afrontarlas de la manera más positiva e integral para ayudar en un futuro y nuestros clientres esten satisfechos.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Pasion</p>
+      <p>Trabajamos con equipos que aman su trabajo, que les gusta trabajar en lo que hacen,lo que nos ayuda a tener un ambiente laboral estupendo.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Designar</p>
+      <p>Nuestros equipos son muy completos cado uno se especializa en su area,lo que nos ayuda en ahorrarnos mucho tiempo en la terminacion de proyectos.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Soporte</p>
+      <p>Nuestro trabajo va de la mano con el cliente es decir el equipo esta en constante comunicacion con el cliente, para que este contento con el proyecto.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Danos el diseño.</h3>
+      <p>Nuestros trabajos se basan en estar en contacto muy seguido con el cliente para que el trabajo quede lo mejor que espera.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Mirar nuestros proyectos</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="https://www.agile611.com/wp-content/uploads/2019/09/annie-spratt-QckxruozjRg-unsplash.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Nuestro equipo</h3>
+  <p class="w3-center w3-large">El tamaño de nuestros equipos varia acorde de los proyectos y los mejores son los siguientes</p>
+  <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card"><!-- Team 1 -->
+        <img src="https://thumbs.dreamstime.com/b/hombre-gris-del-placeholder-de-la-foto-persona-genérica-silueta-en-un-fondo-blanco-144511705.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">Project manager</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+      <div class="w3-card"><!-- Team 1 -->
+        <img src="https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514018?k=20&m=1201514018&s=170667a&w=0&h=TkkKnV-i6o9RcMOqDfqZaaRzHnTNeZutdsQdAdu5S8U=" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Maria Doe</h3>
+          <p class="w3-opacity">Project manager</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://thumbs.dreamstime.com/b/hombre-gris-del-placeholder-de-la-foto-persona-genérica-silueta-en-un-fondo-blanco-144511705.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          <p class="w3-opacity">Diseñadores UX y UI</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+      <div class="w3-card"><!-- Team 1 -->
+        <img src="https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514018?k=20&m=1201514018&s=170667a&w=0&h=TkkKnV-i6o9RcMOqDfqZaaRzHnTNeZutdsQdAdu5S8U=" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Juan Doe</h3>
+          <p class="w3-opacity">Diseñadores UX y UI</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://thumbs.dreamstime.com/b/hombre-gris-del-placeholder-de-la-foto-persona-genérica-silueta-en-un-fondo-blanco-144511705.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+      <div class="w3-card"><!-- Team 1 -->
+        <img src="https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514018?k=20&m=1201514018&s=170667a&w=0&h=TkkKnV-i6o9RcMOqDfqZaaRzHnTNeZutdsQdAdu5S8U=" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Marta Doe</h3>
+          <p class="w3-opacity">Web Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="https://thumbs.dreamstime.com/b/hombre-gris-del-placeholder-de-la-foto-persona-genérica-silueta-en-un-fondo-blanco-144511705.jpg" alt="Dan" style="width:100%">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          <p class="w3-opacity">Scrum master</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+      <div class="w3-card"><!-- Team 1 -->
+        <img src="https://media.istockphoto.com/vectors/person-gray-photo-placeholder-man-vector-id1201514018?k=20&m=1201514018&s=170667a&w=0&h=TkkKnV-i6o9RcMOqDfqZaaRzHnTNeZutdsQdAdu5S8U=" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>Lucia Doe</h3>
+          <p class="w3-opacity">Scrum master</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Team Section -->
+<div class="w3-container" style="padding:128px 16px" id="invest">
+    <h3 class="w3-center">Nuestros investigadores y estudiantes </h3>
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card"><!-- Team 1 -->
+          <img src="https://thumbs.dreamstime.com/b/icono-de-perfil-avatar-predeterminado-masculino-marcador-posición-persona-silueta-cara-hombre-ilustración-vectorial-189495143.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Investigador</h3>
+            <p class="w3-opacity">Investigador</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+        <div class="w3-card"><!-- Team 1 -->
+          <img src="https://www.optimaley.com/wp-content/uploads/2014/09/foto-perfil-generica.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Estudiante</h3>
+            <p class="w3-opacity">Estudiante</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://thumbs.dreamstime.com/b/icono-de-perfil-avatar-predeterminado-masculino-marcador-posición-persona-silueta-cara-hombre-ilustración-vectorial-189495143.jpg" alt="Jane" style="width:100%">
+          <div class="w3-container">
+            <h3>Investigador</h3>
+            <p class="w3-opacity">Investigador</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+        <div class="w3-card"><!-- Team 1 -->
+          <img src="https://www.optimaley.com/wp-content/uploads/2014/09/foto-perfil-generica.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Estudiante</h3>
+            <p class="w3-opacity">Estudiante</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://thumbs.dreamstime.com/b/icono-de-perfil-avatar-predeterminado-masculino-marcador-posición-persona-silueta-cara-hombre-ilustración-vectorial-189495143.jpg" alt="Mike" style="width:100%">
+          <div class="w3-container">
+            <h3>Investigador</h3>
+            <p class="w3-opacity">Investigador</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+        <div class="w3-card"><!-- Team 1 -->
+          <img src="https://www.optimaley.com/wp-content/uploads/2014/09/foto-perfil-generica.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Estudiante</h3>
+            <p class="w3-opacity">Estudiante</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+      </div>
+      <div class="w3-col l3 m6 w3-margin-bottom">
+        <div class="w3-card">
+          <img src="https://thumbs.dreamstime.com/b/icono-de-perfil-avatar-predeterminado-masculino-marcador-posición-persona-silueta-cara-hombre-ilustración-vectorial-189495143.jpg" alt="Dan" style="width:100%">
+          <div class="w3-container">
+            <h3>Investigador</h3>
+            <p class="w3-opacity">Investigador</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+        <div class="w3-card"><!-- Team 1 -->
+          <img src="https://www.optimaley.com/wp-content/uploads/2014/09/foto-perfil-generica.jpg" alt="John" style="width:100%">
+          <div class="w3-container">
+            <h3>Estudiante</h3>
+            <p class="w3-opacity">Estudiante</p>
+            <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+            <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Informacion</button></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">14+</span>
+    <br>Socios
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">55+</span>
+    <br>Proyectos
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">89+</span>
+    <br>Clientes
+  </div>
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">150+</span>
+    <br>Reuniones
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">Nuestros proyectos</h3>
+  <p class="w3-center w3-large">Hacemos lo mejor por que nuestros clientes son lo mejor</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="https://softexpert.com.es/wp-content/uploads/2020/09/1-Gestión-de-proyectos-Gantt.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://cdnb.ganttpro.com/uploads/2021/11/software-de-gestion-de-tareas-y-proyectos-trello-.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.appvizer.es/media/application/25353/screenshot/91649399/mondaycom-monday.com-appvizer-highlight-dashboard-appvizer-highlight-dashboard.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://softexpert.com.es/wp-content/uploads/2020/09/1-Gestión-de-proyectos-Gantt.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+      <p>Protecto *****</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="https://cdnb.ganttpro.com/uploads/2021/11/software-de-gestion-de-tareas-y-proyectos-trello-.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://www.appvizer.es/media/application/25353/screenshot/91649399/mondaycom-monday.com-appvizer-highlight-dashboard-appvizer-highlight-dashboard.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://softexpert.com.es/wp-content/uploads/2020/09/1-Gestión-de-proyectos-Gantt.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+      <p>Protecto *****</p>
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="https://cdnb.ganttpro.com/uploads/2021/11/software-de-gestion-de-tareas-y-proyectos-trello-.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+      <p>Protecto *****</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>Nuestras habilidades.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+      tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-col m6">
+      <p class="w3-wide"><i class="fa fa-window-restore w3-margin-right"></i>Desarrollo de paginas web</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-window-restore w3-margin-right"></i>Desarrollo de paginas web</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+      </div>
+      <p class="w3-wide"><i class="fa fa-window-restore w3-margin-right"></i>Desarrollo de paginas web</p>
+      <div class="w3-grey">
+        <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Pricing Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3>Precio</h3>
+  <p class="w3-large">Nos basamos en las necesidades de los clientes.</p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Personal</li>
+        <li class="w3-padding-16"><b>Equipo</b> 6 Personas</li>
+        <li class="w3-padding-16"><b>Tiempo</b> 1-6 meses</li>
+        <li class="w3-padding-16"><b>Metodologia</b> Cascada</li>
+        <li class="w3-padding-16"><b>Soporte</b> Si</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$$$$$</h2>
+          <span class="w3-opacity">Por mes</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Elegir</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-48">Emplesarial</li>
+        <li class="w3-padding-16"><b>Equipo</b> 30-50 personas</li>
+        <li class="w3-padding-16"><b>Tiempo</b> indeterminado</li>
+        <li class="w3-padding-16"><b>Metodologia</b> Agil</li>
+        <li class="w3-padding-16"><b>Soporte</b> Si</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$$$$$</h2>
+          <span class="w3-opacity">Por mes</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Elegir</button>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">Personalisado</li>
+        <li class="w3-padding-16"><b>Equipo</b> indeterminado</li>
+        <li class="w3-padding-16"><b>Tiempo</b> indeterminado</li>
+        <li class="w3-padding-16"><b>Metodologia</b> indeterminado</li>
+        <li class="w3-padding-16"><b>Soporte</b> indeterminado</li>
+        <li class="w3-padding-16">
+          <h2 class="w3-wide">$$$$$</h2>
+          <span class="w3-opacity">Por mes</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-black w3-padding-large">Elegir</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">Contacto</h3>
+  <p class="w3-center w3-large">Escribenos, no esperes mas para trabajar con nosotros:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Ecuador</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Telefono: +593 0000000000</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: investigaciones@mail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Asunto" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> Enviar
+        </button>
+      </p>
+    </form>
+    <!-- Image of location/map -->
+    <img src="https://c8.alamy.com/compes/dbhtf9/la-calle-warmoesstraat-en-amsterdam-la-parte-antigua-de-la-ciudad-holanda-paises-bajos-dbhtf9.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
